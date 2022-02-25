@@ -1,0 +1,12 @@
+/apha_map/truncate.sql
+/apha_map/migrate.sql
+/cdc_hospitalizations/truncate.sql
+/cdc_hospitalizations/migrate.sql
+/google_mobility/truncate.sql
+/google_mobility/migrate.sql
+/police_shooting_data/truncate.sql
+/police_shooting_data/migrate.sql
+/princeton_eviction/truncate.sql
+/princeton_eviction/migrate.sql
+/state_trend_data/truncate.sql
+/state_trend_data/migrate.sql
