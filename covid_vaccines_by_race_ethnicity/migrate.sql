@@ -1,0 +1,17 @@
+INSERT INTO `refocus_metadata`.covid_vaccines_by_race_ethnicity (
+	date, location, race_categories_include_hispanic_individuals,
+	percent_of_total_white_population_vaccinated,
+	percent_of_total_black_population_vaccinated, 
+	-- white_to_black_ratio, percentage_point_difference_between_white_and_black_rate,
+	percent_of_total_hispanic_population_vaccinated, 
+	-- white_to_hispanic_ratio, percentage_point_difference_between_white_and_hispanic_rate,
+	percent_of_total_asian_population_vaccinated
+	-- , white_to_asian_ratio,percentage_point_difference_between_white_and_asian_rate
+)
+SELECT
+	date, state, hispanic_included,
+	white_percentage_of_vaccinations, black_percentage_of_vaccinations,
+	hispanic_percentage_of_vaccinations, asian_percentage_of_vaccinations
+FROM
+	`refocus`.vaccinations_by_race_ethnicity
+;

@@ -10,3 +10,9 @@
 /princeton_eviction/migrate.sql
 /state_trend_data/truncate.sql
 /state_trend_data/migrate.sql
+/covid_cases_by_race_ethnicity/truncate.sql
+/covid_cases_by_race_ethnicity/migrate.sql
+/covid_deaths_by_race_ethnicity/truncate.sql
+/covid_deaths_by_race_ethnicity/migrate.sql
+/covid_vaccines_by_race_ethnicity/truncate.sql
+/covid_vaccines_by_race_ethnicity/migrate.sql

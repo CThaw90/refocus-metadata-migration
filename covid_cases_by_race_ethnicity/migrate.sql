@@ -1,0 +1,25 @@
+INSERT INTO `refocus_metadata`.covid_cases_by_race_ethnicity (
+	Date, Location, Race_Categories_Include_Hispanic_Individuals,
+	White_percent_of_Cases, White_percent_of_Total_Population,
+	Black_percent_of_Cases, Black_percent_of_Total_Population,
+	Hispanic_percent_of_Cases, Hispanic_percent_of_Total_Population,
+	Asian_percent_of_Cases, Asian_percent_of_Total_Population,
+	American_Indian_or_Alaska_Native_percent_of_Cases,
+	American_Indian_or_Alaska_Native_percent_of_Total_Population,
+	Native_Hawaiian_or_Other_Pacific_Islander_percent_of_Cases,
+	Native_Hawaiian_or_Other_Pacific_Isle_percent_of_Total_Pop,
+	Other_percent_of_Cases, Other_percent_of_Total_Population,
+	percent_of_Cases_with_Known_Race, percent_of_Cases_with_Unknown_Race,
+	percent_of_Cases_with_Known_Ethnicity, percent_of_Cases_with_Missing_Ethnicity
+)
+SELECT
+	date, state, IF(hispanic_included > 0, 'Yes', NULL) as Race_Categories_Include_Hispanic_Individuals,
+	white_percentage_of_cases, white_percentage_of_population, black_percentage_of_cases, black_percentage_of_population, 
+	hispanic_percentage_of_cases, hispanic_percentage_of_population, asian_percentage_of_cases, asian_percentage_of_population,
+	american_indian_percentage_of_cases, american_indian_percentage_of_population, 
+	native_hawaiian_percentage_of_cases, native_hawaiian_percentage_of_population, 
+	other_percentage_of_cases, other_percentage_of_population, known_race_percentage_of_cases, unknown_race_percentage_of_cases,
+	known_ethnicity_percentage_of_cases, unknown_ethnicity_percentage_of_cases
+FROM
+	`refocus`.cases_by_race_ethnicity
+;

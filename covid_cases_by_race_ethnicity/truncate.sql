@@ -1,0 +1,1 @@
+TRUNCATE `refocus_metadata`.covid_cases_by_race_ethnicity;

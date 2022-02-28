@@ -1,0 +1,1 @@
+TRUNCATE `refocus_metadata`.covid_vaccines_by_race_ethnicity;
